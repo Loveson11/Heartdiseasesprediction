@@ -1,6 +1,7 @@
 from flask import Flask,render_template,request
 import numpy as np
 import pickle
+from waitress import serve
 
 app = Flask(__name__)
 @app.route('/')
@@ -48,4 +49,4 @@ def heart_page():
         return render_template('result.html',resultvalue=senddata)
 
 if __name__ == '__main__':
-    app.run()
+    serve(app, host='0.0.0.0', port=50100, threads=1)
