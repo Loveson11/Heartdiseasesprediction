@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Heart Disease Detection Website</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename = 'style.css')}}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Home Page</h1>
+      <div class="nav">
+        <ul>
+          <li><a href="http://127.0.0.1:5000/">Home</a></li>
+          <li>
+            <a href="/heart">Heart Disease Prediction</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="resultclass">{{resultvalue}}</div>
+   <section class="footer1">
+      <p>Copy right @ Labsan Ghimire (ISMT)</p>
+      <div class="icons">
+        <a href="https://github.com/Loveson11/heart_disases">Github</a>
+        <a
+          href=" "
+          >Youtube</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
